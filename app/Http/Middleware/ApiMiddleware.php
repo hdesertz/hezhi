@@ -11,11 +11,11 @@ class ApiMiddleware
 {
 
 
-    protected $auth;
+//    protected $auth;
 
-    protected $route_without_auth = ['callback','sms', 'api\/documentation', 'version','sign','agreement','PushMessage','cib\/interest','newsStates','sms3RD'];
+//    protected $route_without_auth = ['callback','sms', 'api\/documentation', 'version','sign','agreement','PushMessage','cib\/interest','newsStates','sms3RD'];
 
-    protected $route_without_token = ['user\/login', 'user\/register','user','bills','point'];
+//    protected $route_without_token = ['user\/login', 'user\/register','user','bills','point'];
 
 
     public function handle($request, Closure $next)

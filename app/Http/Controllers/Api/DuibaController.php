@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\Duiba\Api;
+namespace App\Http\Controllers\Api;
 
 class DuibaController extends Controller
 {

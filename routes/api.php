@@ -15,7 +15,10 @@ use Illuminate\Http\Request;
 
 Route::group(['namespace' => 'Api', 'middleware' => ['api'], 'prefix' => 'v3'], function () use ($router) {
 
-    $router->get('/test/ceshi','Duiba/TestController@test');
+    $router->get('/test/test','TestController@test');
+    $router->get('/test/getkjf','TestController@GetKjf');
+    $router->get('/test/getdhjg','TestController@GetDhjg');
+
     //CIB
     $router->get('/cib/interest', 'CibController@interest');
     $router->get('/cib/balance', 'CibController@balance');

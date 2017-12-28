@@ -1,13 +1,10 @@
 <?php
-namespace App\Http\Controllers\Duiba\Api;
-
-use App\Models\Users\Cert;
-use App\Models\Users\Channel;
-use Illuminate\Http\Request;
-use Log;
+namespace App\Http\Controllers\Api;
+use App\Http\Controllers\Controller;
 
 class TestController extends Controller
 {
+
     public function test(){
         echo 'hello,world';
     }

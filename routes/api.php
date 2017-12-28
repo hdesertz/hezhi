@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['namespace' => 'Api', 'middleware' => ['api'], 'prefix' => 'v3'], function () use ($router) {
+
+    $router->get('/test/ceshi','TestController@test');
+    //CIB
+    $router->get('/cib/interest', 'CibController@interest');
+    $router->get('/cib/balance', 'CibController@balance');
+    $router->post('/cib/callback', 'CibController@callback');
+
+
+
 });
